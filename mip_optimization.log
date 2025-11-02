@@ -1,0 +1,195 @@
+2025-11-01 13:18:51,836 - INFO - ======================================================================
+2025-11-01 13:18:51,836 - INFO - Starting MIP Portfolio Optimization
+2025-11-01 13:18:51,836 - INFO - Time limit per optimization: 3600 seconds
+2025-11-01 13:18:51,836 - INFO - m values to optimize: [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+2025-11-01 13:18:51,836 - INFO - ======================================================================
+2025-11-01 13:18:51,836 - INFO - No existing results found, starting fresh
+2025-11-01 13:18:51,836 - INFO - Initializing Gurobi environment...
+2025-11-01 13:18:52,226 - INFO - Gurobi environment ready
+2025-11-01 13:18:52,226 - INFO - Loading data...
+2025-11-01 13:18:52,559 - INFO - Found 102 NASDAQ-100 tickers
+2025-11-01 13:18:52,559 - INFO - Downloading data from 2024-01-01 to 2024-12-30...
+2025-11-01 13:19:00,074 - ERROR - 
+1 Failed download:
+2025-11-01 13:19:00,074 - ERROR - ['SOLS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-01-01 -> 2024-12-30) (Yahoo error = "Data doesn\'t exist for startDate = 1704085200, endDate = 1735534800")')
+2025-11-01 13:19:00,131 - INFO - Downloaded 0 days of data for 102 stocks
+2025-11-01 13:19:00,132 - INFO - Downloading data from 2025-01-01 to 2025-10-17...
+2025-11-01 13:19:01,958 - ERROR - 
+1 Failed download:
+2025-11-01 13:19:01,958 - ERROR - ['SOLS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-01-01 -> 2025-10-17) (Yahoo error = "Data doesn\'t exist for startDate = 1735707600, endDate = 1760673600")')
+2025-11-01 13:19:02,005 - INFO - Downloaded 0 days of data for 102 stocks
+2025-11-01 13:19:02,007 - INFO - Downloading data from 2024-01-01 to 2024-12-30...
+2025-11-01 13:19:02,250 - INFO - Downloaded 249 days of data for 1 stocks
+2025-11-01 13:19:02,250 - INFO - Downloading data from 2025-01-01 to 2025-10-17...
+2025-11-01 13:19:02,471 - INFO - Downloaded 197 days of data for 1 stocks
+2025-11-01 13:19:02,485 - INFO - Data prepared: R24 shape=(0, 102), R25 shape=(0, 102)
+2025-11-01 13:19:02,485 - INFO - Date ranges: 2024=0 days, 2025=0 days
+2025-11-01 13:19:02,486 - ERROR - Fatal error: index 0 is out of bounds for axis 0 with size 0
+Traceback (most recent call last):
+  File "c:\Andy\UT Business\FIN372T\372T_Project2\run_mip_optimizations.py", line 405, in <module>
+    run_mip_optimizations()
+  File "c:\Andy\UT Business\FIN372T\372T_Project2\run_mip_optimizations.py", line 262, in run_mip_optimizations
+    "date_range_2024": [str(prev_returns.index[0]), str(prev_returns.index[-1])],
+                            ~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\andyl\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\indexes\base.py", line 5385, in __getitem__
+    return getitem(key)
+           ^^^^^^^^^^^^
+  File "C:\Users\andyl\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\arrays\datetimelike.py", line 379, in __getitem__
+    result = cast("Union[Self, DTScalarOrNaT]", super().__getitem__(key))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\andyl\AppData\Local\Programs\Python\Python311\Lib\site-packages\pandas\core\arrays\_mixins.py", line 284, in __getitem__
+    result = self._ndarray[key]
+             ~~~~~~~~~~~~~^^^^^
+IndexError: index 0 is out of bounds for axis 0 with size 0
+2025-11-01 13:20:57,115 - INFO - ======================================================================
+2025-11-01 13:20:57,115 - INFO - Starting MIP Portfolio Optimization
+2025-11-01 13:20:57,115 - INFO - Time limit per optimization: 3600 seconds
+2025-11-01 13:20:57,115 - INFO - m values to optimize: [5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+2025-11-01 13:20:57,115 - INFO - ======================================================================
+2025-11-01 13:20:57,115 - INFO - No existing results found, starting fresh
+2025-11-01 13:20:57,115 - INFO - Initializing Gurobi environment...
+2025-11-01 13:20:57,140 - INFO - Gurobi environment ready
+2025-11-01 13:20:57,146 - INFO - Loading data...
+2025-11-01 13:20:57,867 - INFO - Found 102 NASDAQ-100 tickers
+2025-11-01 13:20:57,867 - INFO - Downloading data from 2024-01-01 to 2024-12-30...
+2025-11-01 13:21:01,159 - ERROR - 
+1 Failed download:
+2025-11-01 13:21:01,159 - ERROR - ['SOLS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2024-01-01 -> 2024-12-30) (Yahoo error = "Data doesn\'t exist for startDate = 1704085200, endDate = 1735534800")')
+2025-11-01 13:21:01,205 - WARNING - Warning: 1 tickers have no data: ['SOLS']
+2025-11-01 13:21:01,223 - INFO - Downloaded 249 days of data for 101 stocks
+2025-11-01 13:21:01,223 - INFO - Downloading data from 2025-01-01 to 2025-10-17...
+2025-11-01 13:21:03,544 - ERROR - 
+1 Failed download:
+2025-11-01 13:21:03,544 - ERROR - ['SOLS']: YFPricesMissingError('possibly delisted; no price data found  (1d 2025-01-01 -> 2025-10-17) (Yahoo error = "Data doesn\'t exist for startDate = 1735707600, endDate = 1760673600")')
+2025-11-01 13:21:03,586 - WARNING - Warning: 1 tickers have no data: ['SOLS']
+2025-11-01 13:21:03,598 - INFO - Downloaded 197 days of data for 101 stocks
+2025-11-01 13:21:03,599 - INFO - Downloading data from 2024-01-01 to 2024-12-30...
+2025-11-01 13:21:03,878 - INFO - Downloaded 249 days of data for 1 stock
+2025-11-01 13:21:03,878 - INFO - Downloading data from 2025-01-01 to 2025-10-17...
+2025-11-01 13:21:04,334 - INFO - Downloaded 197 days of data for 1 stock
+2025-11-01 13:21:04,373 - INFO - Data prepared: R24 shape=(249, 101), R25 shape=(197, 101)
+2025-11-01 13:21:04,373 - INFO - Date ranges: 2024=249 days, 2025=197 days
+2025-11-01 13:21:04,373 - INFO - Using 101 stocks with valid data
+2025-11-01 13:21:04,373 - INFO - 
+2025-11-01 13:21:04,373 - INFO - ----------------------------------------------------------------------
+2025-11-01 13:21:04,373 - INFO - Optimizing for m=5 (time limit: 3600s)...
+2025-11-01 13:21:04,373 - INFO - ----------------------------------------------------------------------
+2025-11-01 13:34:16,493 - INFO - m=5: Completed in 792.0s
+2025-11-01 13:34:16,494 - INFO -   Status: OPTIMAL
+2025-11-01 13:34:16,494 - INFO -   L1_2024 (in-sample): 0.737191
+2025-11-01 13:34:16,494 - INFO -   L1_2025 (out-of-sample): 0.786888
+2025-11-01 13:34:16,494 - INFO -   Selected stocks: 5
+2025-11-01 13:34:16,494 - INFO - Results saved to mip_results.json
+2025-11-01 13:34:16,494 - INFO - 
+2025-11-01 13:34:16,494 - INFO - ----------------------------------------------------------------------
+2025-11-01 13:34:16,494 - INFO - Optimizing for m=10 (time limit: 3600s)...
+2025-11-01 13:34:16,494 - INFO - ----------------------------------------------------------------------
+2025-11-01 14:34:16,700 - WARNING - Timeout for m=10, using best solution found
+2025-11-01 14:34:20,117 - INFO - m=10: Completed in 3600.1s
+2025-11-01 14:34:20,117 - INFO -   Status: TIME_LIMIT
+2025-11-01 14:34:20,117 - INFO -   L1_2024 (in-sample): 0.426672
+2025-11-01 14:34:20,117 - INFO -   L1_2025 (out-of-sample): 0.443651
+2025-11-01 14:34:20,117 - INFO -   Selected stocks: 10
+2025-11-01 14:34:20,126 - INFO - Results saved to mip_results.json
+2025-11-01 14:34:20,126 - INFO - 
+2025-11-01 14:34:20,126 - INFO - ----------------------------------------------------------------------
+2025-11-01 14:34:20,126 - INFO - Optimizing for m=20 (time limit: 3600s)...
+2025-11-01 14:34:20,126 - INFO - ----------------------------------------------------------------------
+2025-11-01 15:34:20,555 - WARNING - Timeout for m=20, using best solution found
+2025-11-01 15:34:21,353 - INFO - m=20: Completed in 3600.1s
+2025-11-01 15:34:21,369 - INFO -   Status: TIME_LIMIT
+2025-11-01 15:34:21,370 - INFO -   L1_2024 (in-sample): 0.234535
+2025-11-01 15:34:21,370 - INFO -   L1_2025 (out-of-sample): 0.287903
+2025-11-01 15:34:21,370 - INFO -   Selected stocks: 20
+2025-11-01 15:34:21,394 - INFO - Results saved to mip_results.json
+2025-11-01 15:34:21,395 - INFO - 
+2025-11-01 15:34:21,395 - INFO - ----------------------------------------------------------------------
+2025-11-01 15:34:21,396 - INFO - Optimizing for m=30 (time limit: 3600s)...
+2025-11-01 15:34:21,396 - INFO - ----------------------------------------------------------------------
+2025-11-01 16:34:21,665 - WARNING - Timeout for m=30, using best solution found
+2025-11-01 16:34:23,402 - INFO - m=30: Completed in 3600.0s
+2025-11-01 16:34:23,402 - INFO -   Status: TIME_LIMIT
+2025-11-01 16:34:23,402 - INFO -   L1_2024 (in-sample): 0.159733
+2025-11-01 16:34:23,402 - INFO -   L1_2025 (out-of-sample): 0.250019
+2025-11-01 16:34:23,402 - INFO -   Selected stocks: 30
+2025-11-01 16:34:23,402 - INFO - Results saved to mip_results.json
+2025-11-01 16:34:23,402 - INFO - 
+2025-11-01 16:34:23,418 - INFO - ----------------------------------------------------------------------
+2025-11-01 16:34:23,418 - INFO - Optimizing for m=40 (time limit: 3600s)...
+2025-11-01 16:34:23,418 - INFO - ----------------------------------------------------------------------
+2025-11-01 17:34:23,621 - WARNING - Timeout for m=40, using best solution found
+2025-11-01 17:34:24,929 - INFO - m=40: Completed in 3600.1s
+2025-11-01 17:34:24,930 - INFO -   Status: TIME_LIMIT
+2025-11-01 17:34:24,930 - INFO -   L1_2024 (in-sample): 0.128963
+2025-11-01 17:34:24,930 - INFO -   L1_2025 (out-of-sample): 0.261096
+2025-11-01 17:34:24,930 - INFO -   Selected stocks: 40
+2025-11-01 17:34:24,935 - INFO - Results saved to mip_results.json
+2025-11-01 17:34:24,936 - INFO - 
+2025-11-01 17:34:24,936 - INFO - ----------------------------------------------------------------------
+2025-11-01 17:34:24,937 - INFO - Optimizing for m=50 (time limit: 3600s)...
+2025-11-01 17:34:24,937 - INFO - ----------------------------------------------------------------------
+2025-11-01 18:34:25,141 - WARNING - Timeout for m=50, using best solution found
+2025-11-01 18:34:26,867 - INFO - m=50: Completed in 3600.1s
+2025-11-01 18:34:26,867 - INFO -   Status: TIME_LIMIT
+2025-11-01 18:34:26,867 - INFO -   L1_2024 (in-sample): 0.109416
+2025-11-01 18:34:26,867 - INFO -   L1_2025 (out-of-sample): 0.218355
+2025-11-01 18:34:26,867 - INFO -   Selected stocks: 50
+2025-11-01 18:34:26,883 - INFO - Results saved to mip_results.json
+2025-11-01 18:34:26,883 - INFO - 
+2025-11-01 18:34:26,883 - INFO - ----------------------------------------------------------------------
+2025-11-01 18:34:26,883 - INFO - Optimizing for m=60 (time limit: 3600s)...
+2025-11-01 18:34:26,883 - INFO - ----------------------------------------------------------------------
+2025-11-01 19:34:27,259 - WARNING - Timeout for m=60, using best solution found
+2025-11-01 19:34:29,835 - INFO - m=60: Completed in 3600.1s
+2025-11-01 19:34:29,835 - INFO -   Status: TIME_LIMIT
+2025-11-01 19:34:29,835 - INFO -   L1_2024 (in-sample): 0.102466
+2025-11-01 19:34:29,835 - INFO -   L1_2025 (out-of-sample): 0.230937
+2025-11-01 19:34:29,835 - INFO -   Selected stocks: 60
+2025-11-01 19:34:29,852 - INFO - Results saved to mip_results.json
+2025-11-01 19:34:29,852 - INFO - 
+2025-11-01 19:34:29,852 - INFO - ----------------------------------------------------------------------
+2025-11-01 19:34:29,856 - INFO - Optimizing for m=70 (time limit: 3600s)...
+2025-11-01 19:34:29,856 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:34:30,197 - WARNING - Timeout for m=70, using best solution found
+2025-11-01 20:34:33,063 - INFO - m=70: Completed in 3600.1s
+2025-11-01 20:34:33,064 - INFO -   Status: TIME_LIMIT
+2025-11-01 20:34:33,064 - INFO -   L1_2024 (in-sample): 0.096319
+2025-11-01 20:34:33,065 - INFO -   L1_2025 (out-of-sample): 0.220670
+2025-11-01 20:34:33,065 - INFO -   Selected stocks: 70
+2025-11-01 20:34:33,077 - INFO - Results saved to mip_results.json
+2025-11-01 20:34:33,078 - INFO - 
+2025-11-01 20:34:33,078 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:34:33,079 - INFO - Optimizing for m=80 (time limit: 3600s)...
+2025-11-01 20:34:33,079 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:35:29,045 - INFO - m=80: Completed in 55.7s
+2025-11-01 20:35:29,046 - INFO -   Status: OPTIMAL
+2025-11-01 20:35:29,046 - INFO -   L1_2024 (in-sample): 0.094726
+2025-11-01 20:35:29,047 - INFO -   L1_2025 (out-of-sample): 0.212942
+2025-11-01 20:35:29,047 - INFO -   Selected stocks: 80
+2025-11-01 20:35:29,057 - INFO - Results saved to mip_results.json
+2025-11-01 20:35:29,057 - INFO - 
+2025-11-01 20:35:29,058 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:35:29,058 - INFO - Optimizing for m=90 (time limit: 3600s)...
+2025-11-01 20:35:29,059 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:35:33,402 - INFO - m=90: Completed in 4.1s
+2025-11-01 20:35:33,402 - INFO -   Status: OPTIMAL
+2025-11-01 20:35:33,403 - INFO -   L1_2024 (in-sample): 0.094411
+2025-11-01 20:35:33,403 - INFO -   L1_2025 (out-of-sample): 0.217150
+2025-11-01 20:35:33,404 - INFO -   Selected stocks: 90
+2025-11-01 20:35:33,413 - INFO - Results saved to mip_results.json
+2025-11-01 20:35:33,414 - INFO - 
+2025-11-01 20:35:33,414 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:35:33,415 - INFO - Optimizing for m=100 (time limit: 3600s)...
+2025-11-01 20:35:33,416 - INFO - ----------------------------------------------------------------------
+2025-11-01 20:35:34,194 - INFO - m=100: Completed in 0.5s
+2025-11-01 20:35:34,194 - INFO -   Status: OPTIMAL
+2025-11-01 20:35:34,195 - INFO -   L1_2024 (in-sample): 0.094411
+2025-11-01 20:35:34,195 - INFO -   L1_2025 (out-of-sample): 0.217150
+2025-11-01 20:35:34,196 - INFO -   Selected stocks: 100
+2025-11-01 20:35:34,207 - INFO - Results saved to mip_results.json
+2025-11-01 20:35:34,208 - INFO - 
+2025-11-01 20:35:34,209 - INFO - ======================================================================
+2025-11-01 20:35:34,209 - INFO - Optimization complete!
+2025-11-01 20:35:34,210 - INFO - Total time: 7.24 hours (26069.8 seconds)
+2025-11-01 20:35:34,211 - INFO - Results saved to: mip_results.json
+2025-11-01 20:35:34,211 - INFO - ======================================================================
